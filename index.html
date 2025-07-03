@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Planos TutoriAlbion Bot</title>
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #00bcd4, #008ba3);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 40px 20px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+    .pricing-container {
+      background: white;
+      border-radius: 12px;
+      margin: 30px auto 40px;
+      padding: 30px;
+      max-width: 420px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      color: #333;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #b2ebf2;
+      text-shadow: 0 0 3px rgba(0,0,0,0.2);
+    }
+    /* Responsivo */
+    @media (max-width: 480px) {
+      .pricing-container {
+        margin: 20px 10px 30px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TutoriAlbion Bot</h1>
+    <p>Escolha seu plano e libere o acesso ao bot!</p>
+  </header>
+
+  <main class="pricing-container">
+    <stripe-pricing-table 
+      pricing-table-id="prctbl_1RgbEvBOCX5h3JyHoJM6Tol9" 
+      publishable-key="pk_test_51Rdz9GBOCX5h3JyHM9YRK85ldhKMCaNTA1yG3x8sJ3ssHe30EUABgGhhg8dLVL0eODd3niFM2wHIwT2mw7YZ17JC00sMnMtpSA">
+    </stripe-pricing-table>
+  </main>
+
+  <footer>
+    &copy; 2025 TutoriAlbion Bot. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
